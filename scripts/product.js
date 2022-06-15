@@ -70,16 +70,13 @@ const productDetails = document.querySelector('#productDetails');
 display(product_card, ProductImages, productMainImage, productDetails)
 
 
-function dis(data) {
+let displayRightImg = () => {
     const relatedProduct = document.querySelector('#relatedProduct');
-    data.forEach(function (elem) {
-        const img = document.createElement('img');
-        img.src = elem.image_url
-        relatedProduct.append(img)
-    })
+    const img = document.createElement('img');
+    img.src = data.image_url
+    relatedProduct.append(img)
 }
-
-dis(fake)
+displayRightImg(data)
 
 const wishLists = document.querySelector('#wishList');
 wishLists.addEventListener("click", wishList)
