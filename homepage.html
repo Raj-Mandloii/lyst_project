@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<link rel="stylesheet" href="./navbar.css">
-<link rel="stylesheet" href="./footer.css">
+<link rel="stylesheet" href="./Home_Page/navbar.css">
+<link rel="stylesheet" href="./Home_Page/footer.css">
 <style>
     img:hover {
         cursor: pointer;
@@ -127,7 +127,7 @@
     }
     #other-signup{
         margin-top: 40px;
-        border: 1px solid red;
+        border: 1px solid black;
         width: 99.5%;
         height: 600px;
         display: flex;
@@ -201,6 +201,116 @@
         height: 560px;
         overflow: hidden;
     }
+
+    
+    #container{
+display: flex;
+
+}
+
+.boxes{  
+    
+    display: flex;    
+}
+.cont{
+    position: relative;
+    transform: rotate(-90deg);
+    height: 40px;
+
+}
+.rotate{
+    border: 0px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    height: 40px;
+    margin: -100px 100px 0px -280px;
+}
+.clothing{
+    list-style: none;
+    padding-top: 80px;
+    margin-left: -30px;
+}
+@media all and (min-width:60px) and (max-width:990px)
+{
+    #AD {
+        height: 350px;
+      }
+    
+    .signup-join-text{
+        /* width: 30px; */
+        margin-top: 40px;
+        margin-left: 5px;
+        font-size: 8px;
+        font-weight: 300;
+    }
+    #joinbtn2{
+        height: 18px;
+        width: 55px;
+        font-size: 8px;
+        background-color: black;
+        color: white;
+        margin-top: 120px;
+        
+    }
+
+    .children {
+        height: 200px;
+    }
+
+    .child1 {
+       width: 320px;
+        height: 100%;
+        display: flex;
+    }
+    .title{
+        width: 8%;
+    }
+    
+    span {
+        transform: rotate(-90deg);
+        margin-bottom: 100px;
+        font-size: 10px;
+
+    }
+
+    .breakout {
+        width: 300px;
+        height: 288px;
+    }
+
+    .break-text {
+        margin: 15px 35px;
+        margin-bottom: 25px;
+        font-size: 23px;
+    }
+
+    .break-img {
+       width: 250px;
+        height: 220px;
+    }
+
+    .break-img>img {
+        width: 200px;
+        height: 160px;
+        overflow: hidden;
+    }
+    .brands {
+        width: 230px;
+        height: 180px;
+       font-size: 30px;
+       
+    }
+
+    #other-signup{
+       height: 200px;
+    }
+   #green-div{
+        width: 5%;
+        border: 1px solid black;
+    }
+}
+
 </style>
 
 <body>
@@ -213,16 +323,16 @@
             <button id="joinbtn">Join</button>
         </div>
         <div id="search-div">
-            <img src="./assets/lyst-logo.png" alt="">
+            <img src="./Home_Page/assets/lyst-logo.png" alt="">
             <h6 class="h6">WOMEN</h6>
             <h6 class="h6" style="text-decoration: none;">MEN</h6>
             <div id="search">
                 <img src="./assets/icons8-search-500.png" alt="" id="search-img">
                 <input type="text" placeholder="SEARCH (E.G. `VALENTINO DRESSES`)" id="input">
             </div>
-            <img src="./assets/Screenshot 2022-06-15 112642.png" alt="" class="shortcut" style="width: 105px;">
-            <img src="./assets/Screenshot 2022-06-15 112656.png" alt="" class="shortcut" style="width: 105px;">
-            <img src="./assets/Screenshot 2022-06-15 112708.png" alt="" class="shortcut" style="width: 105px;">
+            <img src="./Home_Page/assets/Screenshot 2022-06-15 112642.png" alt="" class="shortcut" style="width: 105px;">
+            <img src="./Home_Page/assets/Screenshot 2022-06-15 112656.png" alt="" class="shortcut" style="width: 105px;">
+            <img src="./Home_Page/assets/Screenshot 2022-06-15 112708.png" alt="" class="shortcut" style="width: 105px;">
 
 
         </div>
@@ -714,7 +824,7 @@
     <!-- +++++++++++++++++++++++_________________________________ -->
 
     <div id="other-signup">
-        <img src="./assets/Screenshot 2022-06-15 152150.png" alt="">
+        <img src="./Home_Page/assets/Screenshot 2022-06-15 152150.png" alt="">
         <!-- <div id="empty-div"></div>
         <div class="signup-div"></div>
         <div  class="signup-div"></div>
@@ -733,58 +843,24 @@
     <!-- ++++++++++++++ MOST WANTED++++++++++++++++ -->
 
 
-    <!-- <div id="most-wanted">
-       <img src="./assets/Screenshot 2022-06-15 181840.png" alt="">
+     <div id="most-wanted">
+       <img src="./Home_Page/assets/Screenshot 2022-06-15 181840.png" alt="">
     </div>
 
-    <div id="women-clothing">
+    <!-- <div id="women-clothing">
         <img src="./assets/Screenshot 2022-06-15 181913.png" alt="">
-     </div> -->
+     </div> --> 
+
+
+
+
+
+
 
 
 
 
 <!-- =============== FOOTER ========================== -->
-
-<!-- <div id="clothing">
-        
-    <div class="opt" >
-        <div class="rota">
-          <button> <h4 class="rotate" >WOMEN'S CLOTHING</h4>
-      </button>
-             </div>
-        
-        <div id="content">
-          <li>Sweaters and knitwear</li>
-          <li>Jumlisuits and romliers</li>
-          <li>Lingerie</li>
-          <li>Beachwear and swimwear outfits</li>
-          <li>Skirts</li>
-          <li>Jeans</li>
-          <li>Tolis</li>
-          <li>Suits</li>
-          <li>Coats</li>
-          <li>Jackets</li>
-          <li>Nightwear and sleeliwear</li>
-          <li>Shorts</li>
-          <li>Hosiery</li>
-          <li>liants,Slacks and Chinos</li>
-          <li>Activewear,gym and workout clothes</li>
-          <li>Dresses</li>
-         </div>
-      <button id="readmore">+More</button>  
-
-                
-    </div>
-     
-  
-
-</div> -->
-
-
-
-
-
 
 <div id="container">
      

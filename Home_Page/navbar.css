@@ -5,6 +5,7 @@ body {
 }
 
 #navbar {
+    overflow: hidden;
     
     background-color: white;
     width: 100%;
@@ -107,4 +108,11 @@ button:hover {
  height: 50px;
     width: -20px;
     
+}
+
+@media all and (min-width:60px) and (max-width:990px)
+{
+  
+    
+   
 }
