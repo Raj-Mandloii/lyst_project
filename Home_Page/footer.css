@@ -1,0 +1,115 @@
+/* main div of "womens clothing " */
+#clothing{  
+    height: 450px;
+    width: 300px;
+    display: flex;
+    border: 0px solid rgb(215, 16, 226);
+}
+/* left div of 1st womens clothing  */
+.rota {
+
+    transform: rotate(-90deg);
+    border: 0px solid red;
+    height: 40px;margin: 43% 0 0 -40%;
+    position: relative;
+  }
+  .rota >button{
+
+    border: 0; width: 400px;
+    background-color: white;
+  }
+  .rotate{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+  }
+
+
+.opt{
+    margin-top: 30px;
+    display: flex;
+    border: 0px solid blue;
+   margin-right: 10px;
+   width: 400px;
+}
+body {
+    font: 14px verdana;
+  }
+  /* all list from sweater to more here */
+  #content {
+    overflow: hidden;
+    height: 14.6em;
+    line-height: 1.8em;
+    width: 300px;
+    margin: 6% 0 0 -20%;
+    list-style-type: none;
+  }
+/* +more id css here manage the margin as your need  */
+  #readmore{
+    background-color: white;border: 0;
+    margin-left: -76%;margin-top: 50%;
+    height: 30px;
+    font-weight: 900;font-size: 16;
+    
+  } 
+
+/* footer */
+
+#container{
+    border-top: 1px solid black;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: #f5f4f2;
+    padding: 30px 30px 30px 30px;
+}
+#box1{
+    width: 40%;
+}
+#social{
+    display: flex;
+}
+#fb{
+    height: 25px;
+    width: 25px;
+}
+#ig{
+    height: 25px;
+    width: 25px;
+    margin-left: 10px;
+}
+
+
+#apps{
+    display: flex;
+    gap:10px;
+}
+#app_store{
+    height: 50px;
+    width: 100px;
+}
+#google_play{
+    height: 50px;
+    width: 100px;
+}
+.box2{
+    width: 30%;
+}
+.box2>p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cla{
+    font-size: 25px;
+}
+
+
+@media all and (min-width:60px) and (max-width:990px)
+{
+    #container{
+        display: block;
+    }
+
+    .box2{
+        width: 100%;
+    }
+   
+}
