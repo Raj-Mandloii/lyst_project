@@ -16,7 +16,7 @@ import displayTrack from "../components/displayTrackData.js"
 import displayNoTrack from "../components/displayNoTrack.js"
 
 // condition if items not added into track/wishlist else items added
-if (trackDeals == null) {
+if (trackDeals == "") {
     const main = document.querySelector('#main');
     let html = displayNoTrack()
     main.innerHTML = html
