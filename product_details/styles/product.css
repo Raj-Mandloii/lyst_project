@@ -7,32 +7,34 @@
     width: 80%;
     margin: auto;
     display: flex;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 10px 10px 10px 10px;
 }
 
 #ProductImages {
     height: 520px;
     width: 7%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 #productMainImage {
     height: 520px;
     width: 37%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 #productDetails {
     height: 520px;
     width: 40%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 #relatedProduct {
     height: 520px;
     width: 15%;
-    border: 1px solid red;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-left: 1px solid gray;
 }
 
 #relatedProduct>img {
@@ -174,4 +176,90 @@
 #relatedProduct>img:hover {
     transform: scale(1.5);
 
+}
+
+@media all and (min-width:451px) and (max-width:750px){
+    #relatedProduct{
+        display: none;
+    }
+
+    #smallImage {
+       display: none;
+    }
+    
+    #productDetailsCont {
+        width: 95%;
+        display: block;
+        margin: auto;
+        height: auto;
+    }
+
+    #ProductImages {
+        display: none;
+    }
+
+    #productMainImage {
+        width: 100%;
+        margin: auto;
+    }
+
+    #mainImage {
+        margin-top: 0px;
+        width: 95%;
+    }
+
+    #brand {
+        margin-top: -80px;
+        margin-left: 3%;
+    }
+    
+    #productDetails {
+        height: auto;
+        width: 100%;
+    }
+}
+
+
+
+
+
+@media all and (min-width:150px) and (max-width:450px){
+    #relatedProduct{
+        display: none;
+    }
+
+    #smallImage {
+       display: none;
+    }
+    
+    #productDetailsCont {
+        display: block;
+        width: 100%;
+        margin: auto;
+        height: auto;
+    }
+
+    #ProductImages {
+        display: none;
+    }
+
+    #productMainImage {
+        height: auto;
+        width: 100%;
+        margin: auto;
+    }
+
+    #mainImage {
+        margin-top: 0px;
+    }
+
+    #brand {
+        margin-top: -30px;
+        margin-left: 3%;
+    }
+    
+    #productDetails {
+        height: auto;
+        width: 100%;
+    }
 }
