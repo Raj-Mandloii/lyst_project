@@ -1,6 +1,5 @@
 let wishData = JSON.parse(localStorage.getItem("wishdata")) || []
 
-let descData = JSON.parse(localStorage.getItem("descdata")) || []
 
 async function fetchData(){
     let url = `Data/product.json`
@@ -33,8 +32,8 @@ function wish(favList,data){
 }  
 
 function descri(data){
-    descData.push(data)
-    localStorage.setItem("descdata",JSON.stringify(descData))
+    
+    localStorage.setItem("descdata",JSON.stringify(data))
 } 
   
 

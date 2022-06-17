@@ -7,7 +7,6 @@ import {fetchData,append,descri,wish} from "./scripts/fetch.js"
 
 let wishData = JSON.parse(localStorage.getItem("wishdata")) || []
 
-let descData = JSON.parse(localStorage.getItem("descdata")) || []
 
 var sortTag;
 
