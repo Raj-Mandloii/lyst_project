@@ -15,9 +15,8 @@
 
  
 <div class="dropdown">
-  <button onclick= "myFunction('myDropdown','dropdown-content')" class="dropbtn">WOMEN</button>
-  <button onclick="myFunction('myDropdownMen','dropdown-content-Men')" class="dropbtn">&nbsp;
-    MEN</button> 
+  <button onclick= "myFunction('myDropdown')" class="dropbtn">WOMEN</button>
+  <button><a href="./menProducts.html">MEN</a></button> 
   <!-- <button id="linkRefMen" ><a href="./menProducts.html">&nbsp;MEN</a></button> -->
  
   <div id="myDropdown" class="dropdown-content">
@@ -27,29 +26,6 @@
         <a id="accessories" >Accessories</a>
         <a id="bags" >Bags</a>
         <a id="jewelry" >Jewelry</a>
-        <a id="sale" ><img src="https://thumbs.dreamstime.com/b/realistic-discount-red-tag-sale-promotion-vector-vintage-label-template-85541979.jpg" alt=""> Sale</a>
-     </div>
-     
-    <!-- <a href="#">All Clothing</a>2r 
-    <a href="#">Beachwear and Swimwear</a>
-    <a href="#">Coats</a>
-    <a href="#">Dresses</a>
-    <a href="#">Hosiery</a>
-    <a href="#">Jackets</a>
-    <a href="#">Jeans</a>
-    <a href="#">Jumpsuits and romperes</a>
-    <a href="#">Sweaters and knitwear</a>
-    <a href="#">Lingerie</a>
-    <a href="#">Nightwear and sleepwear</a>
-    <a href="#">+More</a> -->
-  </div>
-  <div id="myDropdownMen" class="dropdown-content-Men">
-    <div id="categDrop">
-        <a id="clothing">Men Clothing</a>
-        <a id="shoes" >Men Shoes</a>
-        <a id="accessories" >Men Accessories</a>
-        <a id="bags" > Men Bags</a>
-        <a id="jewelry" >Men Jewelry</a>
         <a id="sale" ><img src="https://thumbs.dreamstime.com/b/realistic-discount-red-tag-sale-promotion-vector-vintage-label-template-85541979.jpg" alt=""> Sale</a>
      </div>
   </div>
@@ -66,32 +42,32 @@
     <div id="filter">
         <div id="labelFilter">
           <p>Filters</p>
-          <button>Clear all</button>
+          <button id="clearall">Clear all</button>
         </div>
         <br>
-        <div id="noFilters"> No filters applied</div>
+        <div id="noFilters"> </div>
         <br>
 
-      <select value="Sale" id="sortSale" class="salectFilter">
-        <option value="">Sale</option>
+      <select value="" id="sortSale" class="salectFilter">
+        <option value="">By Sale</option>
         <option value="20%off">20% off or more</option>
         <option value="50%off">50% off or more</option>
         <option value="70%off">70% off or more</option>
       </select>
       <br>
-      <select value="price" class="salectFilter">
-        <option value="">Price</option>
-        <Option>$0</Option>
-        <Option>$50</Option>
-        <Option>$100</Option>
-        <Option>$500</Option>
-        <Option>$5000</Option>
+      <select value="price" class="salectFilter" id="sortPrice">
+        <option value="">By Price</option>
+        <Option value='Upto $50'>Upto $50</Option>
+        <Option value='Upto $100'>Upto $100</Option>
+        <Option value='Upto $500'>Upto $500</Option>
+        
       </select>
       <br>
-      <select value="" class="salectFilter">
-        <option value="#">Stores</option>
-        <option value="#">Blue & Cream</option>
-        <option value="#">FWRD</option>
+      <select value="" class="salectFilter" id="sortBrand">
+        <option value="">By Brand</option>
+        <option value='Nasty Gal'>Nasty Gal</option>
+        <option value='Mytheresa'>Mytheresa</option>
+        <option value='Gilt'>Gilt</option>
       </select>
     </div>
     
@@ -111,18 +87,6 @@
 
         <div id="products_Count"></div>
         <div id="suggestion">
-         <button>+Tops</button>
-         <button>+Dresses</button>
-         <button>+Pant,slacks and chinos</button>
-         <button>+Sweaters</button>
-         <button>+Jackets</button>
-         <button>+Jeans</button>
-         <button>+Skirt</button>
-         <button>+knitwear</button>
-         <button>+Lingerie</button>
-         <button>+Bag</button>
-         <button>+Jewelry</button>
-         <button>+Watch</button>
         
       </div>
        

@@ -14,20 +14,21 @@
  
 <div class="dropdown">
     <button><a href="./products.html">WOMEN</a></button>
-  <button onclick="myFunction()" class="dropbtn">&nbsp;
+  <button onclick="myFunction('myDropdown')" class="dropbtn">&nbsp;
     MEN</button>
     
   
  
   <div id="myDropdown" class="dropdown-content">
     <div id="categDrop">
-        <a id="clothing">Clothing</a>
-        <a id="shoes" >Shoes</a>
-        <a id="accessories" >Accessories</a>
-        <a id="bags" >Bags</a>
-        <a id="jewelry" >Jewelry</a>
-        <a id="sale" ><img src="https://thumbs.dreamstime.com/b/realistic-discount-red-tag-sale-promotion-vector-vintage-label-template-85541979.jpg" alt=""> Sale</a>
-     </div>
+      <a id="mens-clothing">Clothing</a>
+      <a id="mens-shoes" >Shoes</a>
+      <a id="mens-accessories" >Accessories</a>
+      <a id="mens-bags" > Bags</a>
+      <a id="mens-jewelry" >Jewelry</a>
+      <a id="sale" ><img src="https://thumbs.dreamstime.com/b/realistic-discount-red-tag-sale-promotion-vector-vintage-label-template-85541979.jpg" alt=""> Sale</a>
+   </div>
+</div>
      
     <!-- <a href="#">All Clothing</a>2r 
     <a href="#">Beachwear and Swimwear</a>
@@ -55,79 +56,32 @@
     <div id="filter">
         <div id="labelFilter">
           <p>Filters</p>
-          <button>Clear all</button>
+          <button id="clearall">Clear all</button>
         </div>
         <br>
-        <div id="noFilters"> No filters applied</div>
+        <div id="noFilters"> </div>
         <br>
 
-      <select value="Sale" id="sortSale" class="salectFilter">
-        <option value="">Sale</option>
+      <select value="" id="sortSale" class="salectFilter">
+        <option value="">By Sale</option>
         <option value="20%off">20% off or more</option>
         <option value="50%off">50% off or more</option>
         <option value="70%off">70% off or more</option>
       </select>
       <br>
-      <select name="Gender" class="salectFilter">
-         <option value="">Gender</option>
-         <option value="women">Women's</option>
-         <option value="men">Men's</option>
+      <select value="price" class="salectFilter" id="sortPrice">
+        <option value="">By Price</option>
+        <Option value='Upto $50'>Upto $50</Option>
+        <Option value='Upto $100'>Upto $100</Option>
+        <Option value='Upto $500'>Upto $500</Option>
+        
       </select>
       <br>
-      <select value="price" class="salectFilter">
-        <option value="">Price</option>
-        <Option>$0</Option>
-        <Option>$50</Option>
-        <Option>$100</Option>
-        <Option>$500</Option>
-        <Option>$5000</Option>
-      </select>
-      <br>
-      <select value="" class="salectFilter">
-        <option value="#">Shipping</option>
-        <option value="#">Free Shipping</option>
-      </select>
-      <br>
-      <select value="" class="salectFilter">
-
-        <option value="#">Color</option>
-        <option value="#">Black</option>
-        <option value="#">Blue</option>
-        <option value="#">Gray</option>
-        <option value="#">Purple</option>
-        <option value="#">Yellow</option>
-        <option value="#">Orange</option>
-        <option value="#">Pink</option>
-      </select>
-      <br>
-      <select value="" class="salectFilter">
-        <option value="#">Material</option>
-        <option value="#">Canvas</option>
-        <option value="#">Cashmere</option>
-        <option value="#">Cotton</option>
-        <option value="">Denim</option>
-        <option value="#">Felt</option>
-        <option value="#">goose</option>
-        <option value="#">Flur</option>
-
-      </select>
-      <br>
-      <select value="" class="salectFilter">
-        <option value="20%off">Designers</option>
-        <option value="50%off">a Bathing ape</option>
-        <option value="70%off">Bookshield</option>
-      </select>
-      <br>
-      <select value="" class="salectFilter">
-        <option value="#">Stores</option>
-        <option value="#">Blue & Cream</option>
-        <option value="#">FWRD</option>
-        <option value="#">BloomingDale's</option>
-        <option value="">Shopbop</option>
-        <option value="#">Revolve</option>
-        <option value="#">Jaipur</option>
-        <option value="#">Delhi</option>
-
+      <select value="" class="salectFilter" id="sortBrand">
+        <option value="">By Brand</option>
+        <option value='Nasty Gal'>Nasty Gal</option>
+        <option value='Mytheresa'>Mytheresa</option>
+        <option value='Gilt'>Gilt</option>
       </select>
     </div>
     
@@ -145,20 +99,8 @@
         <!-- count the append products here  -->
      
 
-      <div id="products_Count"> 2,138,161 products, 144 stores</div>
-      <div id="suggestion">
-         <button>+Tops</button>
-         <button>+Dresses</button>
-         <button>+Pant,slacks and chinos</button>
-         <button>+Sweaters</button>
-         <button>+Jackets</button>
-         <button>+Jeans</button>
-         <button>+Skirt</button>
-         <button>+knitwear</button>
-         <button>+Lingerie</button>
-         <button>+Bag</button>
-         <button>+Jewelry</button>
-         <button>+Watch</button>
+        <div id="products_Count"></div>
+        <div id="suggestion">
         
       </div>
        
@@ -178,26 +120,23 @@
 
   /* When the user clicks on the button, 
   toggle between hiding and showing the dropdown content */
-  function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
+  function myFunction(id) {
+    document.getElementById(id).classList.toggle("show");
   }
   
   // Close the dropdown if the user clicks outside of it
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
-    }
-  }
+  // window.onclick = function(event) {
+  //   if (!event.target.matches('.dropbtn')) {
+  //     var dropdowns = document.getElementsByClassName("dropdown-content");
+  //     var i;
+  //     for (i = 0; i < dropdowns.length; i++) {
+  //       var openDropdown = dropdowns[i];
+  //       if (openDropdown.classList.contains('show')) {
+  //         openDropdown.classList.remove('show');
+  //       }
+  //     }
+  //   }
+  // }
 </script>
+
 <script src="./product.js" type="module"></script>
-
-
-
-
