@@ -88,31 +88,30 @@ let display = (data, ProductImages, productMainImage, productDetails) => {
 
     trackDiv.addEventListener("click", trackFunc)
 
-    let s = `<p class="heartIcon"><i class='fas fa-heart' style='font-size:28px'></i></p>
+    let saved = `<p class="heartIcon"><i class='fas fa-heart' style='font-size:28px; color:red;'></i></p>
     <p id="trackDeals">Saved</p>`
 
-    let t = `<p class="heartIcon"><i class='far fa-heart' style='font-size:28px'></i></p>
+    let track = `<p class="heartIcon"><i class='far fa-heart' style='font-size:28px'></i></p>
     <p id="trackDeals">Track Deals</p>`
 
-    trackDiv.innerHTML = t
+    trackDiv.innerHTML = track
     let i = 0
     let wishArr = JSON.parse(localStorage.getItem("trackDeals")) || []
     // function for adding data of wishlist in local storage
     function trackFunc() {
 
         if (i == 0) {
-            trackDiv.innerHTML = s
+            trackDiv.innerHTML = saved
             wishArr.push(data)
             localStorage.setItem("trackDeals", JSON.stringify(wishArr))
             i++
         } else if (i == 1) {
-            trackDiv.innerHTML = t
+            trackDiv.innerHTML = track
             wishArr.splice(data, 1)
             // window.localStorage.removeItem("trackDeals")
             localStorage.setItem('trackDeals', JSON.stringify(wishArr));
             i = 0
-        }
-        
+        }  
     }
 
     productDetails.append(brand, detail, priceAndFrom, shopNowDiv, trackDiv)

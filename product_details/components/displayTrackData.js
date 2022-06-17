@@ -27,6 +27,7 @@ let displayTrack = (data, main) => {
         removeButton.setAttribute("class", "removeButton")
         removeButton.addEventListener("click", removeItem)
         function removeItem() {
+            
             if (confirm("Are you sure you want to remove this item from your wishlist?")) {
                 data.splice(index, 1)
                 localStorage.setItem("trackDeals", JSON.stringify(data))

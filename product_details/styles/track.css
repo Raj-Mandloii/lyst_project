@@ -106,11 +106,11 @@
 }
 
 .brand:hover {
-    color:blue;
+    color: blue;
 }
 
 .detail:hover {
-    color:blue;
+    color: blue;
 }
 
 .priceDiv {
@@ -149,4 +149,40 @@
 
 .retailerName {
     margin-left: 10px;
+}
+
+/* #confirm {
+    display: none;
+    background-color: #F3F5F6;
+    color: #000000;
+    border: 1px solid #aaa;
+    position: fixed;
+    width: 270px;
+    height: 100px;
+    left: 40%;
+    top: 40%;
+    margin-left: -100px;
+    padding: 10px 20px 10px;
+    box-sizing: border-box;
+    text-align: center;
+} */
+
+@media all and (min-width:770px) and (max-width:990px) {
+    #appendWishItems {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #main {
+        width: 75%;
+    }
+}
+
+@media all and (min-width:150px) and (max-width:769px) {
+    #appendWishItems {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #main {
+        width: 85%;
+    }
 }
