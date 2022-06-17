@@ -58,9 +58,8 @@ let data = {
 localStorage.setItem("AllData", JSON.stringify(data))
 
 let product_card = JSON.parse(localStorage.getItem("AllData"))
-// console.log(product_card)
 
-
+// import display for appneding the product details
 import display from "../components/displayDetails.js"
 
 const ProductImages = document.querySelector('#ProductImages');
@@ -69,7 +68,7 @@ const productDetails = document.querySelector('#productDetails');
 
 display(product_card, ProductImages, productMainImage, productDetails)
 
-
+// it will show some looks of items
 let displayRightImg = () => {
     const relatedProduct = document.querySelector('#relatedProduct');
     const img = document.createElement('img');
@@ -78,6 +77,7 @@ let displayRightImg = () => {
 }
 displayRightImg(data)
 
+// for redirecting to wishList page
 const wishLists = document.querySelector('#wishList');
 wishLists.addEventListener("click", wishList)
 function wishList() {

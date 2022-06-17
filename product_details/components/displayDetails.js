@@ -93,20 +93,24 @@ let display = (data, ProductImages, productMainImage, productDetails) => {
 
     let t = `<p class="heartIcon"><i class='far fa-heart' style='font-size:28px'></i></p>
     <p id="trackDeals">Track Deals</p>`
-    
+
     trackDiv.innerHTML = t
     let i = 0
+    let wishArr = JSON.parse(localStorage.getItem("trackDeals")) || []
     // function for adding data of wishlist in local storage
     function trackFunc() {
 
-        if(i == 0){
+        if (i == 0) {
             trackDiv.innerHTML = s
-            localStorage.setItem("trackDeals", JSON.stringify(data))
+            wishArr.push(data)
+            localStorage.setItem("trackDeals", JSON.stringify(wishArr))
             i++
-        }else if(i == 1){
+        } else if (i == 1) {
             trackDiv.innerHTML = t
-            window.localStorage.removeItem('trackDeals');
-            i=0
+            wishArr.splice(data, 1)
+            // window.localStorage.removeItem("trackDeals")
+            localStorage.setItem('trackDeals', JSON.stringify(wishArr));
+            i = 0
         }
         
     }
@@ -115,3 +119,4 @@ let display = (data, ProductImages, productMainImage, productDetails) => {
 }
 
 export default display
+

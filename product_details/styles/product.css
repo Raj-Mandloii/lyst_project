@@ -7,26 +7,22 @@
     width: 80%;
     margin: auto;
     display: flex;
-    /* border: 1px solid black; */
     padding: 10px 10px 10px 10px;
 }
 
 #ProductImages {
     height: 520px;
     width: 7%;
-    /* border: 1px solid red; */
 }
 
 #productMainImage {
     height: 520px;
     width: 37%;
-    /* border: 1px solid red; */
 }
 
 #productDetails {
     height: 520px;
     width: 40%;
-    /* border: 1px solid red; */
 }
 
 #relatedProduct {
@@ -53,8 +49,6 @@
     width: 95%;
     height: 90%;
     margin-top: 10%;
-    /* margin-top: 20%; */
-    /* border: 1px solid black; */
 }
 
 #productDetails>button {
@@ -166,7 +160,6 @@
 #trackDiv:hover {
     border: 1px solid black;
     margin-top: 4px;
-    /* margin-right: 1px; */
 }
 
 .heartIcon {
@@ -178,15 +171,15 @@
 
 }
 
-@media all and (min-width:451px) and (max-width:750px){
-    #relatedProduct{
+@media all and (min-width:451px) and (max-width:750px) {
+    #relatedProduct {
         display: none;
     }
 
     #smallImage {
-       display: none;
+        display: none;
     }
-    
+
     #productDetailsCont {
         width: 95%;
         display: block;
@@ -212,26 +205,19 @@
         margin-top: -80px;
         margin-left: 3%;
     }
-    
+
     #productDetails {
         height: auto;
         width: 100%;
     }
 }
 
+@media all and (min-width:150px) and (max-width:450px) {
 
-
-
-
-@media all and (min-width:150px) and (max-width:450px){
-    #relatedProduct{
-        display: none;
+    #main {
+        width: 100%;
     }
 
-    #smallImage {
-       display: none;
-    }
-    
     #productDetailsCont {
         display: block;
         width: 100%;
@@ -249,6 +235,20 @@
         margin: auto;
     }
 
+    #productDetails {
+        height: auto;
+        width: 100%;
+    }
+
+    #relatedProduct {
+        display: none;
+    }
+
+    #smallImage {
+        display: none;
+    }
+
+
     #mainImage {
         margin-top: 0px;
     }
@@ -257,9 +257,5 @@
         margin-top: -30px;
         margin-left: 3%;
     }
-    
-    #productDetails {
-        height: auto;
-        width: 100%;
-    }
+
 }
