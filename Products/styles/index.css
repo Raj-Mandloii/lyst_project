@@ -161,23 +161,6 @@
    margin: -3rem 0 0 0rem;
     font-size: 23px;
 }
-#suggestion{
-    position: relative;
-    height: 30px; width: 1050px;
-    background-color: #f5f4f2;
-    padding-bottom: 10px;
-    color: #8c8195;
-    margin: 2rem 10rem 0 4rem;
-   padding-top: 20px;
-   text-align: center;
-   flex-wrap: wrap;
-}
-#suggestion>button{
-    margin-left: 15px;
-    background-color: white;
-    border: 0;height: 30px;
-   
-}
 #retDiv{
   display: flex;
   
