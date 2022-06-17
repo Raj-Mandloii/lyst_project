@@ -5,8 +5,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../style.css/index.css">
-<link rel="stylesheet" href="../style.css/like.css">
+<link rel="stylesheet" href="./styles/index.css">
+<link rel="stylesheet" href="./styles/like.css">
 <script src="https://kit.fontawesome.com/bb8a3557a3.js" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/c0b6ca2d16.js" crossorigin="anonymous"></script>
 
@@ -15,8 +15,10 @@
 
  
 <div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">WOMEN</button> 
-  <button id="linkRefMen" ><a href="./menProducts.html">&nbsp;MEN</a></button>
+  <button onclick= "myFunction('myDropdown','dropdown-content')" class="dropbtn">WOMEN</button>
+  <button onclick="myFunction('myDropdownMen','dropdown-content-Men')" class="dropbtn">&nbsp;
+    MEN</button> 
+  <!-- <button id="linkRefMen" ><a href="./menProducts.html">&nbsp;MEN</a></button> -->
  
   <div id="myDropdown" class="dropdown-content">
     <div id="categDrop">
@@ -40,6 +42,16 @@
     <a href="#">Lingerie</a>
     <a href="#">Nightwear and sleepwear</a>
     <a href="#">+More</a> -->
+  </div>
+  <div id="myDropdownMen" class="dropdown-content-Men">
+    <div id="categDrop">
+        <a id="clothing">Men Clothing</a>
+        <a id="shoes" >Men Shoes</a>
+        <a id="accessories" >Men Accessories</a>
+        <a id="bags" > Men Bags</a>
+        <a id="jewelry" >Men Jewelry</a>
+        <a id="sale" ><img src="https://thumbs.dreamstime.com/b/realistic-discount-red-tag-sale-promotion-vector-vintage-label-template-85541979.jpg" alt=""> Sale</a>
+     </div>
   </div>
    
 <hr > 
@@ -177,23 +189,23 @@
 
   /* When the user clicks on the button, 
   toggle between hiding and showing the dropdown content */
-  function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
+  function myFunction(id) {
+    document.getElementById(id).classList.toggle("show");
   }
   
   // Close the dropdown if the user clicks outside of it
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
-    }
-  }
+  // window.onclick = function(event) {
+  //   if (!event.target.matches('.dropbtn')) {
+  //     var dropdowns = document.getElementsByClassName("dropdown-content");
+  //     var i;
+  //     for (i = 0; i < dropdowns.length; i++) {
+  //       var openDropdown = dropdowns[i];
+  //       if (openDropdown.classList.contains('show')) {
+  //         openDropdown.classList.remove('show');
+  //       }
+  //     }
+  //   }
+  // }
 </script>
 
 <script src="./product.js" type="module"></script>
