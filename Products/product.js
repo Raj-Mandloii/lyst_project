@@ -13,7 +13,7 @@ var sortTag;
 
 async function getData(tag){
   let data = await fetchData()
-  let mainData = data[tag].data.feed_items
+  let mainData = data[tag].data
   sortTag = tag;
   append(mainData)
 }
@@ -41,16 +41,16 @@ sortSale.addEventListener("change", function(){
 
 async function handlePriceSort(selected){
     let data = await fetchData()
-    let mainData = data[sortTag].data.feed_items
+    let mainData = data[sortTag].data
     if(selected=="lowtohigh"){
-        mainData.sort(function(a,b){
+        mainData.feed_items.sort(function(a,b){
         return Number(a.product_card.full_price_machine_readable_integer_string)-Number(b.product_card.full_price_machine_readable_integer_string);
            
     })
       append(mainData)
     }
     if(selected=="hightolow"){
-        mainData.sort(function(a,b){
+        mainData.feed_items.sort(function(a,b){
         return Number(b.product_card.full_price_machine_readable_integer_string)-Number(a.product_card.full_price_machine_readable_integer_string);   
     })
      append(mainData)
@@ -63,8 +63,9 @@ async function handlePriceSort(selected){
 async function sortbyNew(sort){
         let data = await fetchData()
     // console.log(data.sortby[sortTag][sort].data)
-    let mainData = data[sortTag].data.feed_items
-    var filteredList = mainData.filter(function(el){
+    let mainData = data[sortTag].data
+  
+    var filteredList = mainData.feed_items.filter(function(el){
         if(sort=="20%off"){
             return el.product_card.sale_discount>20;
             }
@@ -75,7 +76,10 @@ async function sortbyNew(sort){
             return el.product_card.sale_discount>=70;
             }
      })
-     append(filteredList)
+
+     let n = filteredList.length
+     let obj = {"feed_items": filteredList, "feed_count":{"retailer_count": mainData.feed_count.retailer_count,"product_count":n }}
+     append(obj)
 }    
 
 

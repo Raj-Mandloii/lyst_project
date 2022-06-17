@@ -13,7 +13,6 @@ function wish(favList,data){
     var filteredWishlist = wishData.filter(function(item){
         return data.product_card.link_id == item.product_card.link_id;
     });
-    console.log(data.product_card.link_id)
     if(filteredWishlist.length>0){
         for(var i=0; i<wishData.length; i++){
             if(wishData[i].product_card.link_id === data.product_card.link_id){
@@ -42,7 +41,11 @@ function descri(data){
   function append(data){
     let container = document.getElementById("products")
     container.innerHTML = "";
-    data.forEach(({product_card:{link_id,image_url,designer_name,short_description,full_price_with_currency_symbol,sale_price_with_currency_symbol,retailer_name,discount_info}}) => {
+    let productCount = document.getElementById("products_Count")
+    
+    productCount.innerText = `${(data.feed_count.product_count).toLocaleString()} Products, ${data.feed_count.retailer_count} Stores`
+    
+    data.feed_items.forEach(({product_card:{link_id,image_url,designer_name,short_description,full_price_with_currency_symbol,sale_price_with_currency_symbol,retailer_name,discount_info}}) => {
         let div = document.createElement("div")
         let img = document.createElement("img")
         img.src = image_url
