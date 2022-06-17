@@ -1,0 +1,180 @@
+*{
+  font-family: 'Roboto', sans-serif;
+}
+.dropbtn {
+    background-color: white;
+    /* color: black; */
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* .dropbtn:hover, .dropbtn:focus {
+    /* background-color: #565c60; */
+  /* } */ 
+  
+  .dropdown {
+    position: relative;
+    margin-left: 10px;
+    display: inline-block;
+  }
+  .dropdown >button {
+    font-size: 16px;font-weight: 550;
+    background-color: white;
+    border: 0;
+  }
+  .dropdown >button:hover {
+   text-decoration: underline;
+  }
+ 
+  
+  .dropdown-content, .dropdown-content-Men {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    overflow: auto;
+    z-index: 1;
+  }
+  
+  .dropdown-content a, .dropdown-content-Men a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+  
+  a{
+    text-decoration: none;
+  color: #aaaaaa;
+  }
+  #categDrop{
+  display: flex;
+  margin-top: 10px;
+  font-size: 18px; font-weight: 600;
+  }#categDrop >a{
+      display: flex;
+  }
+  #categDrop >a >img{
+  height: 25px;width: 30px;
+  margin-top: -6px;
+  }
+  #allWOmens{
+      width: 90px;
+  }
+  #myDropdown>hr,#myDropdownMen>hr{
+  width: 100%;
+  }
+  #myDropdown::-webkit-scrollbar,#myDropdownMen::-webkit-scrollbar{
+    display: none;
+  }
+  
+  #products{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 85%;
+    margin: 40px;
+  }
+  
+  #products img{
+    width: 100%;
+  }
+  
+  #products>div{
+    padding: 20px;
+    border: 1px solid #c2c2c2;
+  }
+  #labelFilter{
+    display: flex;
+    margin-top: -10px;
+
+  }
+  #labelFilter>p{
+    font-size: 24px;font-weight: 600;
+  }
+  #labelFilter>button{
+    height: 30px;margin: 25px 0 0 75px;
+    font-size: 15px;font-weight: 600;
+   border: 0;background-color: white;
+  }
+  #noFilters{
+    height: 40px;width:218px;
+    background-color: #f5f4f2;
+    border-bottom: 1px solid black;
+    color: #8c8195;
+    margin-top: -10px;
+   padding-top: 20px;
+   text-align: center;
+    
+  }
+  
+  #sortDiv{
+    display: flex;
+    justify-content: end;
+    width: 70%;height: 40px;
+    margin: auto;
+    margin-bottom: 20px ;
+   
+  }
+  #sortby{
+    text-align: center;
+    font-size: 16px;
+    /* margin-right:5rem; */
+   
+  }
+
+  /* #sortSale{
+    height: 54px;width:10rem;
+  
+  } */
+  .salectFilter{
+    height: 54px;width:218px;
+     font-size: 16px;font-weight: 500;
+     margin-bottom: 10px;
+     border-color: white;
+     border-bottom: 1px solid black;
+  }
+  #container{
+    width: 90rem;
+    display: flex;
+    margin: 50px 0 0 0px;
+    justify-content:space-between;
+    /* border: 1px solid red; */
+    border-top: 1px solid black;
+    
+  }
+  
+  #container>div{
+  margin-left: 20px; 
+  margin-top: 5px; 
+  }
+#midM{
+    color: red;
+}
+/* counts css here */
+#products_Count{
+   text-align: center;
+   margin: -3rem 0 0 0rem;
+    font-size: 23px;
+}
+#retDiv{
+  display: flex;
+  
+}
+#retDiv>p{
+   margin-right: 10px;
+}
+
+#heart{
+  float: right;
+}
+#price3{
+  color: #938899;
+}
+del{
+  color: black;
+}

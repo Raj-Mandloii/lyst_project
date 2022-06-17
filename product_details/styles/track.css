@@ -1,0 +1,188 @@
+* {
+    font-family: Suisse Intl, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+#main {
+    /* border: 1px solid black; */
+    width: 70%;
+    margin: auto;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
+
+#iconDiv {
+    margin-bottom: 10px;
+}
+
+#savedItems {
+    font-size: 27px;
+}
+
+#noItem {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    margin-top: -10px;
+}
+
+#createWish {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#justTap {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#findFav {
+    display: block;
+    margin: auto;
+    height: 35px;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+    border: 2px solid black;
+    background-color: #fff;
+}
+
+#findFav:hover {
+    background-color: black;
+    color: white;
+}
+
+#appendWishItems {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#divAfterSaved {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+
+.itemBox {
+    border: 1px solid gray;
+    position: relative;
+}
+
+.img {
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
+
+.removeButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 15px;
+    background-color: rgb(226, 225, 225);
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
+
+.brand {
+    font-size: 16px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.detail {
+    font-size: 14px;
+    margin-left: 15px;
+    margin-top: -12px;
+    cursor: pointer;
+}
+
+.brand:hover {
+    color: blue;
+}
+
+.detail:hover {
+    color: blue;
+}
+
+.priceDiv {
+    display: flex;
+    align-items: center;
+    margin-top: -5px;
+}
+
+.oldPrice {
+    font-size: 16px;
+    margin-left: 15px;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+.price {
+    font-size: 16px;
+    margin-left: 5px;
+    font-weight: bold;
+    color: rgb(255, 72, 0);
+}
+
+.off {
+    font-size: 14px;
+    margin-left: 5px;
+    color: gray;
+}
+
+.retailerDiv {
+    display: flex;
+    font-size: 14px;
+    margin-left: 15px;
+    margin-top: -20px;
+    /* align-items: center; */
+}
+
+.retailerName {
+    margin-left: 10px;
+}
+
+/* #confirm {
+    display: none;
+    background-color: #F3F5F6;
+    color: #000000;
+    border: 1px solid #aaa;
+    position: fixed;
+    width: 270px;
+    height: 100px;
+    left: 40%;
+    top: 40%;
+    margin-left: -100px;
+    padding: 10px 20px 10px;
+    box-sizing: border-box;
+    text-align: center;
+} */
+
+@media all and (min-width:770px) and (max-width:990px) {
+    #appendWishItems {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #main {
+        width: 75%;
+    }
+}
+
+@media all and (min-width:150px) and (max-width:769px) {
+    #appendWishItems {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #main {
+        width: 85%;
+    }
+}

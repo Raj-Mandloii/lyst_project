@@ -1,0 +1,261 @@
+* {
+    font-family: Suisse Intl, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+#productDetailsCont {
+    height: 520px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    padding: 10px 10px 10px 10px;
+}
+
+#ProductImages {
+    height: 520px;
+    width: 7%;
+}
+
+#productMainImage {
+    height: 520px;
+    width: 37%;
+}
+
+#productDetails {
+    height: 520px;
+    width: 40%;
+}
+
+#relatedProduct {
+    height: 520px;
+    width: 15%;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-left: 1px solid gray;
+}
+
+#relatedProduct>img {
+    cursor: pointer;
+}
+
+#smallImage {
+    border: 1px solid gray;
+    width: 99%;
+    height: 80px;
+}
+
+#mainImage {
+    display: block;
+    margin: auto;
+    width: 95%;
+    height: 90%;
+    margin-top: 10%;
+}
+
+#productDetails>button {
+    display: block;
+}
+
+#brand {
+    margin-top: 5px;
+    margin-left: 3%;
+}
+
+#detail {
+    margin-top: -15px;
+    font-size: 20px;
+    color: gray;
+    margin-left: 3%;
+}
+
+#priceDiv {
+    display: flex;
+    align-items: center;
+    margin-top: -15px;
+    margin-left: 3%;
+}
+
+#price {
+    font-size: 20px;
+    color: rgb(255, 72, 0);
+}
+
+#oldPrice {
+    font-size: 16px;
+    text-decoration: line-through;
+    margin-left: 5px;
+    color: gray;
+}
+
+#fromDiv {
+    margin-top: -30px;
+    margin-left: 3%;
+}
+
+#relatedProduct>img {
+    display: block;
+    margin: auto;
+    width: 95%;
+    height: 30%;
+}
+
+#from {
+    color: gray;
+}
+
+#fromSpan {
+    color: black;
+
+}
+
+#shopNowDiv {
+    width: 94%;
+    margin: auto;
+    padding-top: 1px;
+    height: 55px;
+    padding-bottom: 1px;
+    font-size: 17px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+#shopNow,
+#shopNow2 {
+    visibility: hidden;
+}
+
+#shopNow1,
+#shopNow2 {
+    margin-top: -5px;
+}
+
+#shopNowDiv:hover #shopNow2 {
+    visibility: visible;
+}
+
+#shopNowDiv:hover #shopNow {
+    visibility: visible;
+}
+
+#trackDiv {
+    width: 94%;
+    margin: auto;
+    margin-top: 5px;
+    height: 55px;
+    font-size: 18px;
+    background-color: rgb(248, 248, 248);
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#trackDiv:hover {
+    border: 1px solid black;
+    margin-top: 4px;
+}
+
+.heartIcon {
+    margin-right: 10px;
+}
+
+#relatedProduct>img:hover {
+    transform: scale(1.5);
+
+}
+
+@media all and (min-width:451px) and (max-width:750px) {
+    #relatedProduct {
+        display: none;
+    }
+
+    #smallImage {
+        display: none;
+    }
+
+    #productDetailsCont {
+        width: 95%;
+        display: block;
+        margin: auto;
+        height: auto;
+    }
+
+    #ProductImages {
+        display: none;
+    }
+
+    #productMainImage {
+        width: 100%;
+        margin: auto;
+    }
+
+    #mainImage {
+        margin-top: 0px;
+        width: 95%;
+    }
+
+    #brand {
+        margin-top: -80px;
+        margin-left: 3%;
+    }
+
+    #productDetails {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media all and (min-width:150px) and (max-width:450px) {
+
+    #main {
+        width: 100%;
+    }
+
+    #productDetailsCont {
+        display: block;
+        width: 100%;
+        margin: auto;
+        height: auto;
+    }
+
+    #ProductImages {
+        display: none;
+    }
+
+    #productMainImage {
+        height: auto;
+        width: 100%;
+        margin: auto;
+    }
+
+    #productDetails {
+        height: auto;
+        width: 100%;
+    }
+
+    #relatedProduct {
+        display: none;
+    }
+
+    #smallImage {
+        display: none;
+    }
+
+
+    #mainImage {
+        margin-top: 0px;
+    }
+
+    #brand {
+        margin-top: -30px;
+        margin-left: 3%;
+    }
+
+}

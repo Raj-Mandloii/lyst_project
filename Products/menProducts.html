@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="./styles/index.css">
+<link rel="stylesheet" href="./styles/like.css">
+<script src="https://kit.fontawesome.com/bb8a3557a3.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+
+ 
+<div class="dropdown">
+    <button><a href="./products.html">WOMEN</a></button>
+  <button onclick="myFunction('myDropdown')" class="dropbtn">&nbsp;
+    MEN</button>
+    
+  
+ 
+  <div id="myDropdown" class="dropdown-content">
+    <div id="categDrop">
+      <a id="mens-clothing">Clothing</a>
+      <a id="mens-shoes" >Shoes</a>
+      <a id="mens-accessories" >Accessories</a>
+      <a id="mens-bags" > Bags</a>
+      <a id="mens-jewelry" >Jewelry</a>
+      <a id="sale" ><img src="https://thumbs.dreamstime.com/b/realistic-discount-red-tag-sale-promotion-vector-vintage-label-template-85541979.jpg" alt=""> Sale</a>
+   </div>
+</div>
+     
+    <!-- <a href="#">All Clothing</a>2r 
+    <a href="#">Beachwear and Swimwear</a>
+    <a href="#">Coats</a>
+    <a href="#">Dresses</a>
+    <a href="#">Hosiery</a>
+    <a href="#">Jackets</a>
+    <a href="#">Jeans</a>
+    <a href="#">Jumpsuits and romperes</a>
+    <a href="#">Sweaters and knitwear</a>
+    <a href="#">Lingerie</a>
+    <a href="#">Nightwear and sleepwear</a>
+    <a href="#">+More</a> -->
+  </div>
+   
+<hr > 
+
+<!-- running data status append here -->
+<div id="current_product"></div>
+
+<!-- //horizontal line between discount and sales -->
+  <div id="container">
+    <!-- filter part -->
+    
+    <div id="filter">
+        <div id="labelFilter">
+          <p>Filters</p>
+          <button id="clearall">Clear all</button>
+        </div>
+        <br>
+        <div id="noFilters"> </div>
+        <br>
+
+      <select value="" id="sortSale" class="salectFilter">
+        <option value="">By Sale</option>
+        <option value="20%off">20% off or more</option>
+        <option value="50%off">50% off or more</option>
+        <option value="70%off">70% off or more</option>
+      </select>
+      <br>
+      <select value="price" class="salectFilter" id="sortPrice">
+        <option value="">By Price</option>
+        <Option value='Upto $50'>Upto $50</Option>
+        <Option value='Upto $100'>Upto $100</Option>
+        <Option value='Upto $500'>Upto $500</Option>
+        
+      </select>
+      <br>
+      <select value="" class="salectFilter" id="sortBrand">
+        <option value="">By Brand</option>
+        <option value='Nasty Gal'>Nasty Gal</option>
+        <option value='Mytheresa'>Mytheresa</option>
+        <option value='Gilt'>Gilt</option>
+      </select>
+    </div>
+    
+    <div>
+    
+      <div id="sortDiv">  
+       <!-- sort function -->
+        <select value="" id="sortby">
+          <option value="recommanded">Sort By recommanded</option>
+          <option value="hightolow">Sort By Price(High to Low)</option>
+          <option value="lowtohigh">Sort By Price(Low to High)</option>
+        </select>
+      </div>
+
+        <!-- count the append products here  -->
+     
+
+        <div id="products_Count"></div>
+        <div id="suggestion">
+        
+      </div>
+       
+      
+      <!-- Products Appends -->
+      <div id="products"></div>  
+
+    </div>
+   
+  </div>
+  
+
+</body>
+</html>
+<script>
+      
+
+  /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  function myFunction(id) {
+    document.getElementById(id).classList.toggle("show");
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+  // window.onclick = function(event) {
+  //   if (!event.target.matches('.dropbtn')) {
+  //     var dropdowns = document.getElementsByClassName("dropdown-content");
+  //     var i;
+  //     for (i = 0; i < dropdowns.length; i++) {
+  //       var openDropdown = dropdowns[i];
+  //       if (openDropdown.classList.contains('show')) {
+  //         openDropdown.classList.remove('show');
+  //       }
+  //     }
+  //   }
+  // }
+</script>
+
+<script src="./product.js" type="module"></script>
