@@ -1,16 +1,9 @@
-// shopnow button
-// https://www.lyst.com/track/lead/${product_card.link_id
 
 
-// let url =  `https://www.lyst.com/api/rothko/modules/product_feed/?url=https://www.lyst.com/shop/clothing/?page=2`
+import navbar from "../../Home_Page/components/navbar.js";
 
-// let getData = async () =>{
-//     let res = await fetch(url)
-//     let data = await res.json()
-//     console.log(data)
-// }
-
-// getData()
+const nav = document.querySelector('#navbar');
+nav.innerHTML = navbar()
 
 let data = {
     "id": 807279979,
