@@ -52,14 +52,18 @@
     text-decoration: none;
   color: #aaaaaa;
   }
-  #categDrop{
+  #categDrop,#categDropMen{
   display: flex;
   margin-top: 10px;
   font-size: 18px; font-weight: 600;
-  }#categDrop >a{
+  background-color: white;
+  cursor: pointer;
+  
+  }#categDrop >a, #categDropMen>a{
       display: flex;
+      background-color: white;
   }
-  #categDrop >a >img{
+  #categDrop >a >img , #categDropMen>a>img{
   height: 25px;width: 30px;
   margin-top: -6px;
   }

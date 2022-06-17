@@ -1,6 +1,6 @@
 
 
-import navbar from "../../Home_Page/components/navbar.js";
+import {navbar} from "../../Home_Page/components/navbar.js";
 
 const nav = document.querySelector('#navbar');
 nav.innerHTML = navbar()
@@ -72,8 +72,8 @@ displayRightImg(data)
 
 // for redirecting to wishList page
 const wishLists = document.querySelector('#wishList');
-wishLists.addEventListener("click", wishList)
-function wishList() {
-    window.location.href = "./track.html"
-}
+// wishLists.addEventListener("click", wishList)
+// function wishList() {
+//     window.location.href = "track.html"
+// }
 

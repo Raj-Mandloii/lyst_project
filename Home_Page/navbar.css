@@ -45,6 +45,10 @@ body {
 
 }
 
+#loNav{
+    width: 130px;
+}
+
 #search {
     display: flex;
     width: 90%;

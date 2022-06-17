@@ -34,6 +34,7 @@ function wish(favList,data){
 function descri(data){
     
     localStorage.setItem("descdata",JSON.stringify(data))
+    window.location.href = "product.html"
 } 
   
 

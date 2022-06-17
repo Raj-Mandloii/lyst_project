@@ -1,9 +1,13 @@
+import {navbar} from "../../Home_Page/components/navbar.js";
+
+const nav = document.querySelector('#navbar');
+nav.innerHTML = navbar()
 
 // function for working wishlist icon
 const wishLists = document.querySelector('#wishList');
-wishLists.addEventListener("click", wishList)
+// wishLists.addEventListener("click", wishList)
 function wishList() {
-    window.location.href = "./track.html"
+    window.location.href = "track.html"
 }
 
 // getting track/wishlist data from local storage

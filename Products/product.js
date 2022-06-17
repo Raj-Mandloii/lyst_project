@@ -4,6 +4,11 @@
 //url = `https://cors-anywhere.herokuapp.com/https://www.lyst.com/api/rothko/modules/product_feed/?url=https://www.lyst.com/shop/${tag}`  
 
 import {fetchData,append,descri,wish} from "./scripts/fetch.js"
+import {navbar} from "../Home_Page/components/navbar.js"
+
+let navBar = document.querySelector("#navbar")
+navBar.innerHTML = navbar()
+
 
 let wishData = JSON.parse(localStorage.getItem("wishdata")) || []
 
@@ -24,13 +29,19 @@ let category = document.getElementById("categDrop").children
 for(let el of category){ 
   el.addEventListener('click',function(){
     cate(el)
+  
+  })
+}
+
+let categoryMen = document.getElementById("categDropMen").children
+for(let el of categoryMen){ 
+  el.addEventListener('click',function(){
+    cate(el)
   })
 }
 
 
-
 async function cate(el){
-    console.log(el.id)
     getData(el.id)
   }
 
