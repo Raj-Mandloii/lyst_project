@@ -5,20 +5,21 @@ let displayTrack = (data, main) => {
     divAfterSaved.id = "divAfterSaved"
     divAfterSaved.innerText = "Create your wishlist from across 12,000 stores in one place. We'll send you an alert when your favorite products go on sale or come back in stock."
 
-    data.forEach(function (elem, index) {
-        const appendWishItems = document.createElement('div');
-        appendWishItems.id = "appendWishItems"
+    const appendWishItems = document.createElement('div');
+    appendWishItems.id = "appendWishItems"
 
+    data.forEach(function (elem, index) {
+       
         const itemBox = document.createElement('div');
         itemBox.setAttribute("class", "itemBox")
 
         const img = document.createElement('img');
         img.setAttribute("class", "img")
-        img.src = elem.image_url
+        img.src = elem.product_card.image_url
 
         img.addEventListener("click", goToShop)
         function goToShop() {
-            let a = elem.link_id
+            let a = elem.product_card.link_id
             window.location.href = `https://www.lyst.com/track/lead/${a}`
         }
 
@@ -30,14 +31,14 @@ let displayTrack = (data, main) => {
             
             if (confirm("Are you sure you want to remove this item from your wishlist?")) {
                 data.splice(index, 1)
-                localStorage.setItem("trackDeals", JSON.stringify(data))
+                localStorage.setItem("wishdata", JSON.stringify(data))
                 window.location.reload()
             }
         }
 
         const brand = document.createElement('h3');
         brand.setAttribute("class", "brand")
-        brand.innerText = elem.designer_name;
+        brand.innerText = elem.product_card.designer_name;
 
         brand.addEventListener("click", ToProductByBrand)
         function ToProductByBrand() {
@@ -46,7 +47,7 @@ let displayTrack = (data, main) => {
 
         const detail = document.createElement('p');
         detail.setAttribute("class", "detail")
-        detail.innerText = elem.short_description
+        detail.innerText = elem.product_card.short_description
 
         detail.addEventListener("click", ToProductByDetail)
         function ToProductByDetail() {
@@ -58,15 +59,15 @@ let displayTrack = (data, main) => {
 
         const oldPrice = document.createElement('p');
         oldPrice.setAttribute("class", "oldPrice")
-        oldPrice.innerText = elem.full_price_with_currency_symbol
+        oldPrice.innerText = elem.product_card.full_price_with_currency_symbol
 
         const price = document.createElement('p');
         price.setAttribute("class", "price")
-        price.innerText = elem.sale_price_with_currency_symbol
+        price.innerText = elem.product_card.sale_price_with_currency_symbol
 
         const off = document.createElement('p');
         off.setAttribute("class", "off")
-        off.innerHTML = elem.discount_info
+        off.innerHTML = elem.product_card.discount_info
 
         priceDiv.append(oldPrice, price, off)
 
@@ -78,7 +79,7 @@ let displayTrack = (data, main) => {
 
         const retailerName = document.createElement('p');
         retailerName.setAttribute("class", "retailerName")
-        retailerName.innerText = elem.retailer_name
+        retailerName.innerText = elem.product_card.retailer_name
 
         retailerDiv.append(linkIcon, retailerName)
 

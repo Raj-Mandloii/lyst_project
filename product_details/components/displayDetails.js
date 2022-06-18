@@ -2,30 +2,30 @@
 // function for display product details 
 let display = (data, ProductImages, productMainImage, productDetails) => {
 
-    document.title = `${data.designer_name} ${data.short_description} | Lyst`
+    document.title = `${data.product_card.designer_name} ${data.product_card.short_description} | Lyst`
     // const ProductImages = document.querySelector('#ProductImages');
 
     const smallImage = document.createElement('img');
     smallImage.id = "smallImage"
-    smallImage.src = data.image_url;
+    smallImage.src = data.product_card.image_url;
 
     ProductImages.append(smallImage)
 
     // const productMainImage = document.querySelector('#productMainImage');
     const mainImage = document.createElement('img');
     mainImage.id = "mainImage"
-    mainImage.src = data.image_url;
+    mainImage.src = data.product_card.image_url;
 
     productMainImage.append(mainImage)
 
     // const productDetails = document.querySelector('#productDetails');
     const brand = document.createElement('h2');
     brand.id = "brand"
-    brand.innerText = data.designer_name;
+    brand.innerText = data.product_card.designer_name;
 
     const detail = document.createElement('p');
     detail.id = "detail"
-    detail.innerText = data.short_description
+    detail.innerText = data.product_card.short_description
 
     const priceAndFrom = document.createElement('div');
     priceAndFrom.id = "priceAndFrom"
@@ -35,11 +35,11 @@ let display = (data, ProductImages, productMainImage, productDetails) => {
 
     const price = document.createElement('h3');
     price.id = "price"
-    price.innerText = data.sale_price_with_currency_symbol
+    price.innerText = data.product_card.sale_price_with_currency_symbol
 
     const oldPrice = document.createElement('h4');
     oldPrice.id = "oldPrice"
-    oldPrice.innerText = data.full_price_with_currency_symbol
+    oldPrice.innerText = data.product_card.full_price_with_currency_symbol
 
     priceDiv.append(price, oldPrice)
 
@@ -48,7 +48,7 @@ let display = (data, ProductImages, productMainImage, productDetails) => {
 
     const fromSpan = document.createElement('span');
     fromSpan.id = "fromSpan"
-    fromSpan.innerText = data.retailer_name
+    fromSpan.innerText = data.product_card.retailer_name
 
     const from = document.createElement('p');
     from.id = "from"
@@ -79,7 +79,7 @@ let display = (data, ProductImages, productMainImage, productDetails) => {
 
     // function for do shopping 
     function shopNowFunc() {
-        let a = data.link_id
+        let a = data.product_card.link_id
         window.location.href = `https://www.lyst.com/track/lead/${a}`
     }
 
@@ -96,20 +96,20 @@ let display = (data, ProductImages, productMainImage, productDetails) => {
 
     trackDiv.innerHTML = track
     let i = 0
-    let wishArr = JSON.parse(localStorage.getItem("trackDeals")) || []
+    let wishArr = JSON.parse(localStorage.getItem("wishdata")) || []
     // function for adding data of wishlist in local storage
     function trackFunc() {
 
         if (i == 0) {
             trackDiv.innerHTML = saved
             wishArr.push(data)
-            localStorage.setItem("trackDeals", JSON.stringify(wishArr))
+            localStorage.setItem("wishdata", JSON.stringify(wishArr))
             i++
         } else if (i == 1) {
             trackDiv.innerHTML = track
             wishArr.splice(data, 1)
-            // window.localStorage.removeItem("trackDeals")
-            localStorage.setItem('trackDeals', JSON.stringify(wishArr));
+            // window.localStorage.removeItem("wishdata")
+            localStorage.setItem('wishdata', JSON.stringify(wishArr));
             i = 0
         }  
     }

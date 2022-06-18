@@ -11,7 +11,7 @@ function wishList() {
 }
 
 // getting track/wishlist data from local storage
-let trackDeals = JSON.parse(localStorage.getItem("trackDeals"))
+let wishdata = JSON.parse(localStorage.getItem("wishdata"))
 
 // importing displayTrack for showing data of track/wishlist
 import displayTrack from "../components/displayTrackData.js"
@@ -20,7 +20,7 @@ import displayTrack from "../components/displayTrackData.js"
 import displayNoTrack from "../components/displayNoTrack.js"
 
 // condition if items not added into track/wishlist else items added
-if (trackDeals == "") {
+if (wishdata == "") {
     const main = document.querySelector('#main');
     let html = displayNoTrack()
     main.innerHTML = html
@@ -28,10 +28,10 @@ if (trackDeals == "") {
     // button for redirecting to home page
     const findFav = document.querySelector('#findFav');
     findFav.addEventListener("click", function () {
-        window.location.href = "./Product.html"
+        window.location.href = "./products.html"
     })
 }
 else {
     const main = document.querySelector('#main');
-    displayTrack(trackDeals, main)
+    displayTrack(wishdata, main)
 }
