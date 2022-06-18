@@ -49,6 +49,7 @@ function descri(data){
         let div = document.createElement("div")
         let img = document.createElement("img")
         img.src = image_url
+        img.style.cursor = "pointer"
       //heart button created here
         var favList = document.createElement("i")
                        favList.addEventListener("click",function(){
@@ -69,14 +70,17 @@ function descri(data){
         favList.id="heart"
     
         let title = document.createElement("h4")
+        title.style.cursor = "pointer"
         title.innerText = designer_name
         title.addEventListener("click",function(){
             descri({product_card:{link_id,image_url,designer_name,short_description,full_price_with_currency_symbol,sale_price_with_currency_symbol,retailer_name,discount_info}})
         })
         let desc = document.createElement("p")
+        desc.style.cursor = "pointer"
         desc.innerText = short_description
         let price = document.createElement("h3")
         price.style.color="#938899"
+        price.style.cursor = "pointer"
         if(sale_price_with_currency_symbol===null){
             price.innerHTML = full_price_with_currency_symbol
         }else{
@@ -87,7 +91,7 @@ function descri(data){
         let retailer = document.createElement("p")
         let linksgv=document.createElement("p")
         linksgv.innerHTML=`<i class="fa-solid fa-link"></i>`
-        
+        retailer.style.cursor = "pointer"
         retailer.innerText= ` ${retailer_name}`
         retailer.id= 'ret'
         retailerDiv.append(linksgv,retailer)

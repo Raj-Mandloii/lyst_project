@@ -2,8 +2,8 @@ function navbar (){
     return ` <div id="sign-join">
     <p class="nav-p-tag">IN-US$</p>
     <p class="nav-p-tag">Help</p>
-    <p class="nav-p-tag">Sign in</p>
-    <button id="joinbtn">Join</button>
+    <a href = "login.html"><p class="nav-p-tag">Sign in</p></a>
+    <a href = "login.html"><button id="joinbtn">Join</button></a>
 </div>
 <div id="search-div">
     <a id="loNav" href = "index.html"><img id="loNav" src="assets/lyst-logo.png" alt=""></a>
