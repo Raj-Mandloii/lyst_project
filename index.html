@@ -5,8 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Your World of Fashion | Lyst</title>
+    <!-- Lyst icon in title -->
+    <link rel="apple-touch-icon" sizes="180x180" href="product_details/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="product_details/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="product_details/favicon/favicon-16x16.png">
+    <link rel="manifest" href="product_details/favicon/site.webmanifest">
 </head>
 <link rel="stylesheet" href="./Home_Page/navbar.css">
 <link rel="stylesheet" href="./Home_Page/footer.css">
@@ -27,13 +32,12 @@
     #alNav{
         content: url("./assets/Screenshot 2022-06-15 112708.png");
     } */
-    
 </style>
 
 <body>
     <!-- Nav Bar  -->
     <div id="navbar">
-       
+
     </div>
     <!-- Bottom- page -->
     <img src="https://cdna.lystit.com/cms/ENG_header_XL_9f9e2af236_615828663f.jpg" alt="AD" id="AD">
@@ -541,13 +545,13 @@
     <!-- ++++++++++++++ MOST WANTED++++++++++++++++ -->
 
 
-     <div id="most-wanted">
-       <img src="./assets/Screenshot 2022-06-15 181840.png" alt="">
+    <div id="most-wanted">
+        <img src="./assets/Screenshot 2022-06-15 181840.png" alt="">
     </div>
 
     <!-- <div id="women-clothing">
         <img src="./assets/Screenshot 2022-06-15 181913.png" alt="">
-     </div> --> 
+     </div> -->
 
 
 
@@ -558,12 +562,12 @@
 
 
 
-<!-- =============== FOOTER ========================== -->
+    <!-- =============== FOOTER ========================== -->
 
-<div id="footer">
-   
+    <div id="footer">
 
- </div>
+
+    </div>
 
 </body>
 
@@ -573,16 +577,15 @@
 <script type="module">
 
     import footer from "./Home_Page/components/footer.js";
-    import {navbar}  from "./Home_Page/components/navbar.js";
+    import { navbar } from "./Home_Page/components/navbar.js";
 
     let foot = document.getElementById("footer")
     let navbarr = document.getElementById("navbar")
 
-    
+
 
     foot.innerHTML = footer();
     navbarr.innerHTML = navbar();
 
 
 </script>
-
