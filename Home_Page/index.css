@@ -1,0 +1,303 @@
+img:hover {
+    cursor: pointer;
+}
+
+#AD {
+    width: 100%;
+    height: 650px;
+    border-bottom: 1.5px solid black;
+    margin-bottom: 30px;
+}
+
+.products {
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid black;
+    height: auto;
+    overflow: scroll;
+    overflow-y: hidden;
+}
+
+.products::-webkit-scrollbar,
+.breakout-brands::-webkit-scrollbar {
+    display: none;
+
+}
+
+
+.children {
+    /* border: 1px solid red; */
+    height: 300px;
+}
+
+.child1 {
+    /* border: 1px solid red; */
+    width: 420px;
+    height: 100%;
+    display: flex;
+}
+
+span {
+    transform: rotate(-90deg);
+    margin-bottom: 100px;
+    font-size: 20px;
+
+}
+
+.title {
+    /* border: 1px solid red; */
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    align-items: flex-end;
+    margin-left: 60px;
+}
+
+.image {
+    /* border: 1px solid red; */
+    width: 100%;
+}
+
+.inside-image {
+    width: 110%;
+    height: 100%;
+    border-right: 1px solid black;
+}
+
+.breakout-brands {
+    display: flex;
+    /* align-items: flex-start; */
+    border: 2px solid black;
+    /* height: auto; */
+    /* margin-top: 130px; */
+    overflow: scroll;
+    overflow-y: hidden;
+}
+
+.brands {
+    width: 430px;
+    text-align: start;
+    height: 280px;
+    font-weight: 300;
+    padding-top: 110px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 70px;
+    background-color: #f5f4f2;
+    border-right: 1px solid black;
+}
+
+.breakout {
+    width: 500px;
+    height: 388px;
+    border: 1px solid black;
+   }
+
+.break-text {
+    margin: 25px 35px;
+    font-size: 30px;
+}
+
+.break-img {
+    display: flex;
+    justify-content: end;
+    /* jusst */
+    align-items: flex-end;
+    /* border: 1px solid black; */
+    width: 450px;
+    height: 320px;
+}
+
+.break-img>img {
+    width: 360px;
+    height: 310px;
+}
+#other-signup{
+    margin-top: 40px;
+    border: 1px solid black;
+    width: 99.5%;
+    height: 600px;
+    display: flex;
+}
+#empty-div{
+    width: 20%;
+    border: 1px solid red;
+    height: 100%;
+    background-color: #f5f4f2;
+}
+#join-div{
+    width: 25%;
+    /* border: 1px solid red; */
+    height: 100%;
+  background-color: #cafc4f; 
+    display: flex; 
+    border-left: 1px solid black;
+    /* justify-content: s;  */
+   
+}
+#join-div:hover{
+    background-color: #c9a9ef;
+}
+#green-empty{
+    width: 15%;
+    /* border: 1px solid red; */
+    height: 100%;
+    background-color: #cafc4f;   
+}
+#green-div{
+    width: 20%;
+    border: 1px solid black;
+    height: 100%;
+}
+.signup-join-text{
+    width: 30px;
+    margin-top: 130px;
+    margin-left: 40px;
+    font-size: 50px;
+    font-weight: 300;
+}
+#joinbtn2{
+    height: 38px;
+    width: 125px;
+    background-color: black;
+    color: white;
+    margin-top: 380px;
+    
+}
+#most-wanted{
+    display: flex;
+    width: 99.5%;
+    /* border: 1px solid black; */
+    height: 340px;
+    overflow: hidden;
+}
+#most{
+    padding: 0;
+    margin: 0;
+    /* margin-top: 90px; */
+    width: 120px;
+    height: 0px;
+    border: 1px solid black;
+    /* transform: rotate(-90deg); */
+    overflow: hidden;
+}
+#women-clothing{
+    /* border: 1px solid black; */
+    display: flex;
+    width: 99.5%;
+    height: 560px;
+    overflow: hidden;
+}
+
+
+#container{
+display: flex;
+
+}
+
+.boxes{  
+
+display: flex;    
+}
+.cont{
+position: relative;
+transform: rotate(-90deg);
+height: 40px;
+
+}
+.rotate{
+border: 0px;
+background-color: white;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 30px;
+height: 40px;
+margin: -100px 100px 0px -280px;
+}
+.clothing{
+list-style: none;
+padding-top: 80px;
+margin-left: -30px;
+}
+@media all and (min-width:60px) and (max-width:990px)
+{
+#AD {
+    height: 350px;
+  }
+
+.signup-join-text{
+    /* width: 30px; */
+    margin-top: 40px;
+    margin-left: 5px;
+    font-size: 8px;
+    font-weight: 300;
+}
+#joinbtn2{
+    height: 18px;
+    width: 55px;
+    font-size: 8px;
+    background-color: black;
+    color: white;
+    margin-top: 120px;
+    
+}
+
+.children {
+    height: 200px;
+}
+
+.child1 {
+   width: 320px;
+    height: 100%;
+    display: flex;
+}
+.title{
+    width: 8%;
+}
+
+span {
+    transform: rotate(-90deg);
+    margin-bottom: 100px;
+    font-size: 10px;
+
+}
+
+.breakout {
+    width: 300px;
+    height: 288px;
+}
+
+.break-text {
+    margin: 15px 35px;
+    margin-bottom: 25px;
+    font-size: 23px;
+}
+
+.break-img {
+   width: 250px;
+    height: 220px;
+}
+
+.break-img>img {
+    width: 200px;
+    height: 160px;
+    overflow: hidden;
+}
+.brands {
+    width: 230px;
+    height: 180px;
+   font-size: 30px;
+   
+}
+
+#other-signup{
+   height: 200px;
+}
+#green-div{
+    width: 5%;
+    border: 1px solid black;
+}
+}
+
+
+
