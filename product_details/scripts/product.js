@@ -2,6 +2,11 @@
 
 import { navbar } from "../../Home_Page/components/navbar.js";
 
+import footer from "../../Home_Page/components/footer.js";
+
+let foot = document.getElementById("footer")
+foot.innerHTML = footer();
+
 const nav = document.querySelector('#navbar');
 nav.innerHTML = navbar()
 

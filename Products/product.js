@@ -5,9 +5,16 @@
 
 import {fetchData,append,descri,wish} from "./scripts/fetch.js"
 import {navbar} from "../Home_Page/components/navbar.js"
+import footer from "../Home_Page/components/footer.js";
+
+let foot = document.getElementById("footer")
+foot.innerHTML = footer();
 
 let navBar = document.querySelector("#navbar")
 navBar.innerHTML = navbar()
+
+
+  
 
 
 let wishData = JSON.parse(localStorage.getItem("wishdata")) || []

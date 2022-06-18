@@ -11,9 +11,11 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
     <link rel="manifest" href="./favicon/site.webmanifest">
     <link rel="stylesheet" href="./styles/login.css">
+    <link rel="stylesheet" href="Home_Page/navbar.css">
+    <link rel="stylesheet" href="Home_Page/footer.css">
 </head>
 <body>
-   
+<div id="navbar"></div>
 <div id="main">
         <div id="left">
             
@@ -72,6 +74,17 @@
             </div>
         </div>
 </div>
+<div id="footer"></div>
 </body>
 </html>
-<script src="login.js"></script>
+<script src="./login.js" ></script>
+<script type="module">
+import {navbar} from "./Home_Page/components/navbar.js"
+import footer from "./Home_Page/components/footer.js";
+
+let foot = document.getElementById("footer")
+foot.innerHTML = footer();
+
+let navBar = document.querySelector("#navbar")
+navBar.innerHTML = navbar()
+</script>
