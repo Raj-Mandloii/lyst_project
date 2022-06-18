@@ -33,7 +33,7 @@ if (wishdata == "") {
     // button for redirecting to home page
     const findFav = document.querySelector('#findFav');
     findFav.addEventListener("click", function () {
-        window.location.href = "./products.html"
+        window.location.href = "./index.html"
     })
 }
 else {
