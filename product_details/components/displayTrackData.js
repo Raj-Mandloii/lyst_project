@@ -42,6 +42,7 @@ let displayTrack = (data, main) => {
 
         brand.addEventListener("click", ToProductByBrand)
         function ToProductByBrand() {
+            localStorage.setItem("descdata", JSON.stringify(elem))
             window.location.href = "./Product.html"
         }
 
@@ -51,6 +52,7 @@ let displayTrack = (data, main) => {
 
         detail.addEventListener("click", ToProductByDetail)
         function ToProductByDetail() {
+            localStorage.setItem("descdata", JSON.stringify(elem))
             window.location.href = "./Product.html"
         }
 
