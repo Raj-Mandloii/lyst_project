@@ -1,5 +1,13 @@
 ### Lyst Website Clone
-About - Lyst is a fashion technology company and premium shopping app.
-For brands and stores. The goal is to power success online and drive meaningful direct sales within a highly trusted brand environment.
+About - 
+- Lyst is a fashion technology company and premium shopping app.
+- For brands and stores. The goal is to power success online and drive meaningful direct sales within a highly trusted brand environment.
+Lyst operates an inventory free platform, and uses a proprietary data engine to provide each customer with a highly personalised shopping experience. Orders are fulfilled by the thousands of brands and stores which partner with Lyst.
+
+- Brands available on Lyst include Balenciaga, Balmain, Bottega Veneta, Burberry, Fendi, Gucci, Moncler, Off-White, Prada, Saint Laurent and Valentino.
+
+- We’re a mix of fashion lovers, technologists and data experts. Two thirds of Lyst talent are engineers, scientists and product people. We’re focused on ways technology can delight both our customers and our brand & store partners.
+
+- Lyst is also a unique source of fashion data insights, and is responsible for The Lyst Index, the industry leading report of the hottest brands and products worldwide.
 
 [Link to Website](https://62aec458d002661172622f35--delightful-biscochitos-b2f2b6.netlify.app/index.html)
