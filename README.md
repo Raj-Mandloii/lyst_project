@@ -1,4 +1,7 @@
 ### Lyst Website Clone
+  
+  <img src="https://user-images.githubusercontent.com/56001279/167425809-da8dee61-03d3-498f-bd5b-6a0c5479b492.png" alt="Homepage" />
+  
 About - 
 - Lyst is a fashion technology company and premium shopping app.
 - For brands and stores. The goal is to power success online and drive meaningful direct sales within a highly trusted brand environment.
