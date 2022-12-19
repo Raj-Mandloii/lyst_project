@@ -11,3 +11,14 @@ Lyst operates an inventory free platform, and uses a proprietary data engine to 
 - Lyst is also a unique source of fashion data insights, and is responsible for The Lyst Index, the industry leading report of the hottest brands and products worldwide.
 
 [Link to Website](https://62aec458d002661172622f35--delightful-biscochitos-b2f2b6.netlify.app/index.html)
+
+Delpoy Link: -
+
+Login/Singup
+Follow Us On Social Media Platform (Facebook redirecting)
+Page Builtup
+Sort by Prices
+Add to Cart the product
+Counting No. of items in cart
+Providing Discounts on total amount
+checkout the order
